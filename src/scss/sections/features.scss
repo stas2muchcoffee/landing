@@ -1,0 +1,57 @@
+.features {
+    background-color: $bgblue;
+	display: flex; 
+	flex-direction: column;
+    min-height: 100vh;
+    padding-top: rem(236px);
+	position: relative;    
+}
+
+.features-img {
+    width: rem(900px);
+    height: rem(645px);
+    position: absolute;
+    top: -12%;
+    left: 51%;
+    transform: translate(-50%, -51%);
+}
+
+.features-img__pic {
+    background-image: url(../img/icons/desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.features-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(57px);    
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    padding: 0 rem(100px) 0 rem(122px);
+    
+    &__item {
+        display: flex;
+        max-width: rem(600px);
+        width: 50%;
+        margin-bottom: rem(104px);
+    }
+}
+
+.features-list__img {
+    width: rem(101px);
+    height: rem(101px);
+    margin-right: rem(20px);
+}
+
+.features-list__description {
+    font-size: rem(14px);
+    color: #ffffff;
+}

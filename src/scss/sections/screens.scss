@@ -1,0 +1,9 @@
+.screens {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding-top: rem(64px);
+    &-title {
+        display: flex;
+        justify-content: center;
+    }
+}

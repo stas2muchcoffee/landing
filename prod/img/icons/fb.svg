@@ -1,0 +1,36 @@
+<svg width="44" height="43" viewBox="0 0 44 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12149 32549)">
+<g id="Group">
+<g id="Ellipse 4" filter="url(#filter0_d)">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(12149.9 -32549)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(12149.9 -32549)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="006-facebook-letter-logo">
+<g id="Group">
+<g id="Facebook">
+<use xlink:href="#path2_fill" transform="translate(12166.5 -32539.2)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="12149" y="-32549" width="44" height="43" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 43.1003 21.5C 43.1003 33.3741 33.4519 43 21.5501 43C 9.64832 43 0 33.3741 0 21.5C 0 9.62588 9.64832 0 21.5501 0C 33.4519 0 43.1003 9.62588 43.1003 21.5Z"/>
+<path id="path1_stroke_2x" d="M 41.1003 21.5C 41.1003 32.2652 32.3518 41 21.5501 41L 21.5501 45C 34.5521 45 45.1003 34.4831 45.1003 21.5L 41.1003 21.5ZM 21.5501 41C 10.7485 41 2 32.2652 2 21.5L -2 21.5C -2 34.4831 8.54815 45 21.5501 45L 21.5501 41ZM 2 21.5C 2 10.7348 10.7485 2 21.5501 2L 21.5501 -2C 8.54815 -2 -2 8.51692 -2 21.5L 2 21.5ZM 21.5501 2C 32.3518 2 41.1003 10.7348 41.1003 21.5L 45.1003 21.5C 45.1003 8.51692 34.5521 -2 21.5501 -2L 21.5501 2Z"/>
+<path id="path2_fill" d="M 2.26928 4.3464C 2.26928 4.91196 2.26928 7.43629 2.26928 7.43629L -4.46948e-08 7.43629L -4.46948e-08 11.2146L 2.26928 11.2146L 2.26928 22.4425L 6.93087 22.4425L 6.93087 11.2149L 10.059 11.2149C 10.059 11.2149 10.352 9.40326 10.494 7.42236C 10.0868 7.42236 6.9485 7.42236 6.9485 7.42236C 6.9485 7.42236 6.9485 5.22425 6.9485 4.83896C 6.9485 4.45284 7.45675 3.93346 7.9591 3.93346C 8.4605 3.93346 9.51875 3.93346 10.4989 3.93346C 10.4989 3.41903 10.4989 1.64158 10.4989 1.34992e-08C 9.19043 1.34992e-08 7.70181 1.34992e-08 7.04563 1.34992e-08C 2.15405 -0.000260878 2.26928 3.78183 2.26928 4.3464Z"/>
+</defs>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="44" height="43" viewBox="0 0 44 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12088 32549)">
+<g id="Group 2">
+<g id="Ellipse 4" filter="url(#filter0_d)">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(12088.5 -32549)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(12088.5 -32549)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="002-twitter-logo">
+<g id="Group">
+<g id="Twitter  x28 alt x29">
+<use xlink:href="#path2_fill" transform="translate(12096 -32537.2)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="12088" y="-32549" width="44" height="43" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 43.1003 21.5C 43.1003 33.3741 33.4519 43 21.5501 43C 9.64832 43 0 33.3741 0 21.5C 0 9.62588 9.64832 0 21.5501 0C 33.4519 0 43.1003 9.62588 43.1003 21.5Z"/>
+<path id="path1_stroke_2x" d="M 41.1003 21.5C 41.1003 32.2652 32.3518 41 21.5501 41L 21.5501 45C 34.5521 45 45.1003 34.4831 45.1003 21.5L 41.1003 21.5ZM 21.5501 41C 10.7485 41 2 32.2652 2 21.5L -2 21.5C -2 34.4831 8.54815 45 21.5501 45L 21.5501 41ZM 2 21.5C 2 10.7348 10.7485 2 21.5501 2L 21.5501 -2C 8.54815 -2 -2 8.51692 -2 21.5L 2 21.5ZM 21.5501 2C 32.3518 2 41.1003 10.7348 41.1003 21.5L 45.1003 21.5C 45.1003 8.51692 34.5521 -2 21.5501 -2L 21.5501 2Z"/>
+<path id="path2_fill" d="M 24.8276 8.55474C 26.4001 8.42531 27.4668 7.71214 27.8774 6.74447C 27.3101 7.09209 25.5492 7.47108 24.5767 7.11015C 24.529 6.88221 24.4758 6.6657 24.4235 6.47023C 23.6825 3.75587 21.1453 1.56908 18.4869 1.83326C 18.702 1.74663 18.9201 1.66597 19.1376 1.59356C 19.4302 1.48901 21.1471 1.21035 20.8767 0.605825C 20.6489 0.0740965 18.5513 1.00767 18.1563 1.1297C 18.6777 0.934096 19.5399 0.597642 19.6323 -1.14945e-07C 18.8335 0.109294 18.0494 0.48601 17.4436 1.03378C 17.6623 0.798891 17.8282 0.512636 17.8634 0.204561C 15.733 1.56226 14.4885 4.29948 13.4814 6.95468C 12.6906 6.19014 11.9897 5.58808 11.3609 5.25377C 9.5969 4.31013 7.48777 3.32558 4.17692 2.09951C 4.0753 3.19225 4.71867 4.64522 6.57255 5.61146C 6.17089 5.55782 5.43638 5.67751 4.84893 5.81784C 5.08817 7.06969 5.86948 8.10106 7.98466 8.5998C 7.01802 8.66344 6.51845 8.88288 6.06569 9.35583C 6.50595 10.2265 7.58027 11.2512 9.51285 11.0408C 7.36421 11.9647 8.63676 13.6755 10.3851 13.4204C 7.40255 16.4935 2.70022 16.2677 0 13.6973C 7.05011 23.2806 22.3754 19.3648 24.6593 10.1343C 26.3704 10.1488 27.3763 9.54299 28 8.87508C 27.0141 9.04198 25.5852 8.8695 24.8276 8.55474Z"/>
+</defs>
+</svg>

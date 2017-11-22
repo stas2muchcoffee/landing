@@ -1,0 +1,28 @@
+.socials {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+
+	&__item {
+		display: flex;
+        margin-right: rem(18px);
+    }
+    &__link {
+        display: block;
+        background: url(../img/icons/css_sprites.png) no-repeat;
+        width: 44px;
+        height: 43px;
+    }
+}
+
+.socials__link-gh {
+    background: url('../img/icons/css_sprites.png') -18px -18px;
+}
+
+.socials__link-tw {
+    background: url('../img/icons/css_sprites.png') -98px -18px;
+}
+
+.socials__link-fb {
+    background: url('../img/icons/css_sprites.png') -178px -18px;
+}

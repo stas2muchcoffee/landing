@@ -1,0 +1,34 @@
+// colors
+$bgblue: #00B8D4;
+
+// resolutions
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+$vertical: 320px;
+
+// components
+@import "components/_media.scss";
+@import "components/_mixins.scss";
+
+
+// layout
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+@import "layout/_adjusment.scss";
+
+// modules
+@import "modules/download.scss";
+@import "modules/captions.scss";
+@import "modules/socials.scss";
+
+// sections
+@import "sections/hero.scss";
+@import "sections/about.scss";
+@import "sections/desktop.scss";
+@import "sections/features.scss";
+@import "sections/vote.scss";
+@import "sections/screens.scss";
+@import "sections/feeds.scss";
+@import "sections/market.scss";
+

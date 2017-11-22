@@ -1,0 +1,32 @@
+.hero {
+	background-color: #fff;
+	position: relative;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	// margin-bottom: 15%;
+	padding-top: rem(43px);
+	min-height: 100vh;	
+}
+
+.hero-logo {
+	width: rem(224px);
+	height: rem(268px);
+	// margin-bottom: rem(18px);
+}
+
+.hero-logo__img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.hero-text {
+	font-family: 'Mont-Light';
+	font-size: rem(36px);
+	color: #9B51E0;
+	margin-bottom: rem(35px);
+}
+
+.hero-market {
+	margin-bottom: rem(300px);
+}
