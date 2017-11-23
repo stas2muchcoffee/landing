@@ -33,6 +33,11 @@
 .store-btns__link {
 	width: rem(200px);
 	height: rem(65px);
+
+	@include tablets {
+		width: rem(230px);
+		height: rem(85px);
+	}
 }
 
 .store-btns__iphone {

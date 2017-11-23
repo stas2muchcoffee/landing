@@ -3,14 +3,17 @@
     color: #333333;
     width: 100%;
     text-align: center;
+
+    @include tablets {
+        font-size: rem(36px);
+    }
 }
 
 .caption_color_wh {
-    font-size: rem(48px);
     color: #fff;
 }
 
 .caption_color_blue {
-    font-size: rem(48px);
+    font-size: rem(48px);    
     color: $bgblue;
 }

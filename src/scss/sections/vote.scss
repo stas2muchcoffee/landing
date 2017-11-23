@@ -12,28 +12,59 @@
     background-attachment: fixed;
     height: rem(1140px);
     width: 100%;
+    display: flex;
+    
 
-    &-title {
+     &-title {
         display: flex;
         justify-content: center;
-        z-index: 20;
+        font-size: rem(48px);
+        color: $bgblue;        
+
+        @include tablets {
+            font-size: rem(30px);
+        }
     }
     &-container {
-        width: rem(655px);
     }
 }
 
+.vote-wrapper {
+    display: flex;
+    margin: 0 auto;
+    // transform: translateX(-17%);
+}
+
 .vote-screen {
-    position: absolute;
-    bottom: rem(70px);
-    left: rem(200px);
+    margin-top: -200px;
+    display: flex;
     z-index: 500;
+
+    @include desktop {
+        bottom: rem(80px);
+        left: 0;
+    }
+
+    @include tablets {
+        font-size: rem(30px);
+        margin-left: -200px;
+    }
+}
+
+.vote-screen__img {
+
+    @include tablets {
+        width: rem(180px);
+        height: rem(300px);
+        font-size: rem(30px);
+    }
 }
 
 .vote-use {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -43,8 +74,20 @@
 
     &__title {
         margin-bottom: rem(31px);
+
+        @include tablets {
+            margin-bottom: rem(50px);
+        }
+    }
+
+    @include desktop {
+        padding-left: 20%;
+    }
+    @include tablets {
+        padding-left: rem(25px);
     }
 }
+
 
 .vote-tabs {
     margin-bottom: rem(76px);
@@ -52,6 +95,10 @@
 .tabs-list {
     display: flex;
     justify-content: center;
+
+    @include tablets {
+        padding-left: 35%;
+    }
 
     &__item {
         margin-right: rem(50px);
@@ -63,10 +110,19 @@
 
         &:last-child {
             margin-right: 0;
+            @include tablets {
+                visibility: hidden;
+            }
         }
         &.active {
             border-bottom: 3px solid #18FFFF;
             transition: .3s;
+        }
+
+        @include tablets {
+            padding-left: 0;
+            // padding-bottom: 0;
+            white-space: nowrap;
         }
     }
 }
@@ -79,5 +135,11 @@
         color: #ffffff;
         font-size: rem(18px);
         padding-top: rem(35px);
+
+        @include tablets {
+            text-align: center;
+            padding-right: 15%;
+            padding-top: rem(70px);        
+        }
     }
 }

@@ -25,6 +25,10 @@
     margin-top: -250px;
     position: relative;
     margin-bottom: rem(66px);
+
+    @include desktop {
+        margin-top: -200px;  
+    }
 }
 
 .about-list__container {
@@ -74,6 +78,10 @@
     color: #fff;
     text-align: center;
     margin-bottom: rem(41px);
+
+    @include tablets {
+        padding: 0 rem(190px);
+    }
 }
 
 .about-socials {

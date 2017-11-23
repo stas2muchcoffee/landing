@@ -2,7 +2,7 @@
 	@return $px / 16px + 0rem;
 }
 
-@mixin tablets {
+@mixin desktop {
 	@media screen and (max-width: $desktop) {
 		@content;
 	}

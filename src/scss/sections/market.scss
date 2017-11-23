@@ -13,7 +13,6 @@
         width: rem(635px);
         position: relative;
     
-
         &-title {
             margin-bottom: rem(65px);
         }
@@ -46,6 +45,11 @@
     top: 245px;
     left: 40px;
     z-index: -1;
+
+    @include tablets {
+        top: 200px;
+        left: 0;
+    }
 }
 
 .market-phones__item_socials {

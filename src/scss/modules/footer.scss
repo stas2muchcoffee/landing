@@ -16,6 +16,11 @@
         align-items: center;
         text-align: center;
         padding: rem(40px) 0 rem(70px) 0;
+
+        @include tablets {
+            padding: rem(60px) 0 rem(40px) 0;
+            width: rem(520px);
+        }
     }
 }
 
@@ -26,9 +31,13 @@
 .form {
     width: 100%;
 
+    @include tablets {
+        margin-bottom: rem(65px);
+    }
+
     &__input {
         width: 100%;
-        padding: 10px;        
+        padding: rem(10px) rem(40px) rem(10px) rem(10px);        
         border: none;
         outline: none;
         font-size: rem(18px);
@@ -46,6 +55,15 @@
 ::-moz-placeholder          {color:#00E5FF;;};
 :-moz-placeholder           {color:#00E5FF;;};
 :-ms-input-placeholder      {color:#00E5FF;;};
+
+.footer-socials {
+    visibility: hidden;
+
+    @include tablets {
+        visibility: visible;
+    }
+
+}
 
 
 
