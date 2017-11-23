@@ -1,0 +1,56 @@
+.market {
+    background-color: #fff;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: rem(71px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+
+    &-container {
+        width: rem(635px);
+        position: relative;
+    
+
+        &-title {
+            margin-bottom: rem(65px);
+        }
+        &-phones {
+            width: 100%;            
+            display: flex;
+            justify-content: flex-end;            
+            position: relative;
+        }
+    }
+}
+
+.market-phones__item {
+    // width: rem(304px);
+    // height: rem(570px);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    position: relative;  
+    
+}
+
+.market-phones__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.market-phones__item_absolute {
+    position: absolute;
+    top: 245px;
+    left: 40px;
+    z-index: -1;
+}
+
+.market-phones__item_socials {
+    position: absolute;
+    top: 58%;
+    right: -85%;
+}
+

@@ -1,6 +1,7 @@
 .store {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	&-text {
 		font-family: 'Mont-Light';
@@ -11,6 +12,8 @@
 	}
 	&-btns {
 		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 }
 
@@ -20,44 +23,42 @@
 
 .store-btns__item {
 	display: flex;
-	background-color: #B2B2B2;
 	border-radius: rem(5px);
-	margin-right: rem(20px);
+	margin-right: rem(20px);	
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .store-btns__link {
-	display: flex;
-	align-items: center;	
-	padding: rem(10px) rem(13px) rem(7px) rem(14px);
-}
-
-.store-btns__pic {
-	width: rem(23px);
-	height: rem(43px);
-	margin-right: rem(10px);
+	width: rem(200px);
+	height: rem(65px);
 }
 
 .store-btns__iphone {
-	background: url(../img/icons/iphone.png) no-repeat;
+	background: url(../img/icons/appstore.png) no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	max-width: 100%;
+	max-height: 100%;
 	height: 100%;
 }
 
+.store-btns__iphone_bl {
+	background: url(../img/icons/appstore_black.png) no-repeat;
+}
+
 .store-btns__google {
-	background: url(../img/icons/google.png) no-repeat;
+	background: url(../img/icons/googleplay.png) no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 }
 
-.store-btns__pic_size {
-	width: rem(39px);
-	height: rem(45px);
-	max-width: 100%;	
+.store-btns__google_bl {
+	background: url(../img/icons/googleplay_black.png) no-repeat;
 }
 
 .store-btns__text {

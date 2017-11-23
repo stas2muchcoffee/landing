@@ -1,36 +1,83 @@
 .vote {
-    background-color: $bgblue;
-	display: flex; 
-	flex-direction: column;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    // min-height: 100vh;
     min-height: 100%;
     position: relative;
-    padding-bottom: rem(49px);   
+    padding-top: rem(54px);   
+    background: url(../img/content/vote.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: rem(1140px);
+    width: 100%;
 
-    &-img {
-        width: 100%;
-        height: rem(940px);
-        margin-bottom: rem(50px);
-        &__pic {
-            background: url(../img/content/vote.jpg) no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100%;
-        }
+    &-title {
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+    }
+    &-container {
+        width: rem(655px);
     }
 }
 
 .vote-screen {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: rem(70px);
+    left: rem(200px);
+    z-index: 500;
 }
 
 .vote-use {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $bgblue;
+    padding: rem(50px) 0;
+
     &__title {
         margin-bottom: rem(31px);
+    }
+}
+
+.vote-tabs {
+    margin-bottom: rem(76px);
+}
+.tabs-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        margin-right: rem(50px);
+        color: #ffffff;
+        font-size: rem(18px);
+        padding-bottom: rem(8px);
+        cursor: pointer;
+        transition: .3s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            border-bottom: 3px solid #18FFFF;
+            transition: .3s;
+        }
+    }
+}
+
+.tabs-content {
+    width: rem(750px);
+    padding-left: rem(100px);    
+    
+    &__item {
+        color: #ffffff;
+        font-size: rem(18px);
+        padding-top: rem(35px);
     }
 }
