@@ -19,26 +19,35 @@
         display: flex;
         justify-content: center;
         font-size: rem(48px);
-        color: $bgblue;        
+        color: $bgblue;
+        
+        @include laptop {
+            font-size: rem(36px);
+        }
 
         @include tablets {
             font-size: rem(30px);
         }
     }
     &-container {
+        max-width: rem(650px);
+        display: flex;
+        flex-direction: column;
+
+        @include tablets {
+            max-width: 100%;
+        }
     }
 }
 
 .vote-wrapper {
     display: flex;
-    margin: 0 auto;
-    // transform: translateX(-17%);
 }
 
 .vote-screen {
     margin-top: -200px;
     display: flex;
-    z-index: 500;
+    z-index: 100;
 
     @include desktop {
         bottom: rem(80px);
@@ -47,30 +56,38 @@
 
     @include tablets {
         font-size: rem(30px);
-        margin-left: -200px;
     }
 }
 
 .vote-screen__img {
+    // height: rem(500px);
+
+    @include desktop {
+        width: rem(292px);
+        height: rem(500px);
+    }
+
+    @include laptop {
+        width: rem(220px);
+        height: rem(350px);
+    }
 
     @include tablets {
         width: rem(180px);
         height: rem(300px);
-        font-size: rem(30px);
     }
 }
 
 .vote-use {
     width: 100%;
     display: flex;
-    // flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
     background-color: $bgblue;
     padding: rem(50px) 0;
+    padding-left: 10%;  
+
 
     &__title {
         margin-bottom: rem(31px);
@@ -81,23 +98,30 @@
     }
 
     @include desktop {
-        padding-left: 20%;
+        
+        padding-left: 0;
     }
-    @include tablets {
-        padding-left: rem(25px);
+    @include laptop {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 
 .vote-tabs {
     margin-bottom: rem(76px);
+    padding-left: 12%;
+
+    @include tablets {
+        padding-left: 0;
+    }
+    
 }
 .tabs-list {
     display: flex;
-    justify-content: center;
 
     @include tablets {
-        padding-left: 35%;
+        justify-content: center;
     }
 
     &__item {
@@ -110,9 +134,6 @@
 
         &:last-child {
             margin-right: 0;
-            @include tablets {
-                visibility: hidden;
-            }
         }
         &.active {
             border-bottom: 3px solid #18FFFF;
@@ -121,15 +142,12 @@
 
         @include tablets {
             padding-left: 0;
-            // padding-bottom: 0;
             white-space: nowrap;
         }
     }
 }
 
 .tabs-content {
-    width: rem(750px);
-    padding-left: rem(100px);    
     
     &__item {
         color: #ffffff;
@@ -138,7 +156,7 @@
 
         @include tablets {
             text-align: center;
-            padding-right: 15%;
+            padding: 0 5%;
             padding-top: rem(70px);        
         }
     }

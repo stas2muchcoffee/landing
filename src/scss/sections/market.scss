@@ -40,7 +40,6 @@
         width: rem(284px);
         height: rem(490px);
     }
-    
 }
 
 .market-phones__img {
@@ -49,12 +48,9 @@
 }
 
 .market-phones__item_size {
-    // width: rem(304px);
-    // height: rem(570px);
     @include tablets {
         transform: translateX(230px);
     }
-
     @include phones {
         transform: translateX(210px);
     }
