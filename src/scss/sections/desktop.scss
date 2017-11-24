@@ -8,6 +8,18 @@
         min-height: rem(525px);
     }
 
+    @include tablets {
+        min-height: rem(425px);
+    }
+
+    @include tablets {
+        min-height: rem(375px);
+    }
+
+    @include vertical {
+        min-height: rem(325px);
+    }
+
     &-title {
         display: flex;
         justify-content: center;

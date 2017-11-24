@@ -17,9 +17,16 @@
         text-align: center;
         padding: rem(40px) 0 rem(70px) 0;
 
+        @include laptop {
+            width: rem(600px);
+        }
         @include tablets {
-            padding: rem(60px) 0 rem(40px) 0;
-            width: rem(520px);
+            padding: rem(65px) 0 rem(40px) 0;
+            width: rem(480px);
+        }
+        @include phones {
+            padding: rem(65px) 0 rem(40px) 0;
+            width: rem(330px);
         }
     }
 }
@@ -33,6 +40,9 @@
 
     @include tablets {
         margin-bottom: rem(65px);
+    }
+    @include phones {
+        margin-bottom: rem(100px);
     }
 
     &__input {

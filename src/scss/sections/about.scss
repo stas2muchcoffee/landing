@@ -29,6 +29,11 @@
     @include desktop {
         margin-top: -200px;  
     }
+
+    @include phones {
+        justify-content: center;
+        transform: translateX(10px);
+    }
 }
 
 .about-list__container {
@@ -50,6 +55,8 @@
     padding: rem(42px) rem(22px) rem(25px) rem(21px);
     border-radius: rem(40px);
     z-index: 10;
+
+ 
 }
 
 .about-list__img {
@@ -57,6 +64,16 @@
     width: rem(250px);
     height: rem(444px);
     margin-bottom: rem(18px);
+
+    @include phones {
+        width: rem(200px);
+        height: rem(364px);
+    }
+
+    @include vertical {
+        width: rem(150px);
+        height: rem(282px);
+    }
 }
 
 .about-list__btn {
@@ -79,8 +96,19 @@
     text-align: center;
     margin-bottom: rem(41px);
 
+    @include laptop {
+        padding: 0 17%;
+    }
     @include tablets {
-        padding: 0 rem(190px);
+        padding: 0 24%;
+    }
+
+    @include phones {
+        padding: 0 28%;
+    }
+
+    @include vertical {
+        padding: 0 30%;
     }
 }
 

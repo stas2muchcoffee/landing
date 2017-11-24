@@ -2,10 +2,21 @@
     background-color: $bgblue;
     display: flex; 
     justify-content: center;    
-    min-height: 100vh;
+    min-height: 100%;
     position: relative;
     padding-top: rem(48px);
-    padding-bottom: rem(98px);
+    padding-bottom: rem(101px);
+
+
+    @include desktop {
+        padding-left: rem(30px);
+        padding-right: rem(30px);
+    }
+
+    @include vertical {
+        padding-bottom: rem(44px);
+    }
+
 }
 .feeds-container {
     width: rem(1100px);
@@ -24,16 +35,29 @@
     display: flex;
     justify-content: center;
 
+    @include vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
         margin-right: rem(122px);
+
         &:last-child {
             margin-right: 0;
         }
 
-        @include tablets {
+        @include desktop {
+            margin-right: rem(67px);
+        }
+        @include laptop {
             margin-right: 0;
+        }
+        @include vertical {
+            margin-bottom: rem(50px);
         }
     }
 }
@@ -52,6 +76,10 @@
     margin-bottom: rem(35px);
     position: relative;
 
+    @include phones {
+        padding-right: rem(30px);
+    }
+
     &:before {
         content: "";
         display: block;
@@ -62,6 +90,12 @@
         height: 0;
         border-top: 40px solid #fff; 
         border-right: 70px solid transparent;
+
+        @include vertical {
+            top: 98%;
+            border-top: 30px solid #fff; 
+            border-right: 50px solid transparent;
+        }
     }
 }
 
@@ -77,6 +111,11 @@
 .feeds-list__img {
     width: rem(101px);
     height: rem(101px);
+
+    @include vertical {
+        width: rem(84px);
+        height: rem(84px);
+    }
 }
 
 .feeds-list__ava {
@@ -88,7 +127,10 @@
 
 .feeds-list__item_hidden {
 
-    @include tablets {
+    @include laptop {
         display: none;
+    }
+    @include vertical {
+        display: flex;
     }
 }

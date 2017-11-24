@@ -7,13 +7,25 @@
     @include tablets {
         font-size: rem(36px);
     }
+
 }
 
 .caption_color_wh {
     color: #fff;
+    @include phones {
+        font-size: rem(24px);
+    }
 }
 
 .caption_color_blue {
-    font-size: rem(48px);    
+    font-size: rem(48px);   
     color: $bgblue;
+
+    @include tablets {
+        font-size: rem(36px);
+    }
+
+    @include vertical {
+        font-size: rem(24px);
+    }
 }

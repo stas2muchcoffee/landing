@@ -23,6 +23,14 @@
 	font-size: rem(36px);
 	color: #9B51E0;
 	margin-bottom: rem(35px);
+	text-align: center;
+
+	@include phones {
+		font-size: rem(28px);
+	}
+	@include vertical {
+		font-size: rem(22px);
+    }
 }
 
 .hero-market {

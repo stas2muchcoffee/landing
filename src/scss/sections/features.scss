@@ -2,13 +2,27 @@
     background-color: $bgblue;
 	display: flex; 
 	flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
+    height: 100%;
     padding-top: rem(236px);
     position: relative;
+
+    @include desktop {
+        padding-top: 30%;
+    }
+    @include laptop {
+        padding-top: 25%;
+    }
     
     @include tablets {
-        padding-bottom: rem(58px);
-        padding-top: rem(186px);    
+        padding-top: 38%;    
+    }
+    @include phones {
+        padding-top: 22%;    
+    }
+
+    @include vertical {
+        padding-top: 40%;    
     }
 }
 
@@ -23,10 +37,25 @@
     @include desktop {
         top: -4%;
     }
-    @include tablets {
-        width: rem(656px);
-        height: rem(498px);
+    @include laptop {
+        width: rem(670px);
+        height: rem(549px);
         top: -7%;
+    }
+    @include tablets {
+        width: rem(566px);
+        height: rem(478px);
+        top: 3%;
+    }
+    @include phones {
+        width: rem(420px);
+        height: rem(478px);
+        top: 3%;
+    }
+    @include vertical {
+        width: rem(390px);
+        height: rem(478px);
+        top: 7%;
     }
 }
 
@@ -44,9 +73,10 @@
     justify-content: center;
     margin-bottom: rem(57px);
 
-    @include tablets {
-        display: none;
-    } 
+    @include phones {
+        margin-bottom: rem(40px);
+    }
+ 
 }
 
 .features-list {
@@ -66,43 +96,63 @@
     &__item {
         display: flex;
         max-width: rem(600px);
-        width: 50%;
+        width: 46%;
         margin-bottom: rem(104px);
+        margin-right: rem(25px);        
 
         @include desktop {
             width: 45%;
         }
-        @include tablets {
+        @include laptop {
             flex-direction: column;
             align-items: center;
             margin-bottom: rem(34px); 
             text-align: center;
+            width: 40%;
+            transform: translateX(10px);    
+        }
+        @include vertical {
+            width: 100%;
+            transform: none;
+            margin-right: 0;        
         }
     }
 }
 
 .features-list__img {
-    width: rem(101px);
-    height: rem(101px);
     margin-right: rem(20px);
 
+    @include laptop {
+        margin-right: rem(20px);
+        margin-bottom: rem(40px);
+    }
+
     @include tablets {
-        width: rem(60px);
-        height: rem(60px);
-        margin-right: rem(00px);
+        margin-right: rem(20px);
+        margin-bottom: rem(40px);
+    }
+    @include phones {
+        margin-right: 0;        
+    }
+
+    @include vertical {
         margin-bottom: rem(20px);
-        
-    } 
+    }
 }
 
 .features-list__pic {
-    // width: 100%;
-    // height: 100%;
-    // max-width: 100%;
-    // max-height: 100%;
+    width: rem(101px);
+    height: rem(101px);
 
-    width: rem(60px);
-    height: rem(60px);
+    @include tablets {
+        width: rem(90px);
+        height: rem(90px);
+    }
+
+    @include phones {
+        width: rem(70px);
+        height: rem(70px);
+    }
 }
 
 .features-list__description {

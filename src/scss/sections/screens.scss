@@ -4,6 +4,8 @@
   &-title {
     display: flex;
     justify-content: center;
+    font-size: rem(36px);
+    color: $bgblue
   }
 
   &-slider{
