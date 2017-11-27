@@ -788,13 +788,14 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: 3rem;
-    color: #00B8D4; }
+    color: #00B8D4;
+    text-align: center; }
     @media screen and (max-width: 900px) {
       .vote-title {
         font-size: 2.25rem; } }
     @media screen and (max-width: 600px) {
       .vote-title {
-        font-size: 1.875rem; } }
+        font-size: 1.625rem; } }
   .vote-container {
     max-width: 40.625rem;
     display: -webkit-box;
@@ -892,10 +893,16 @@ section {
   display: flex; }
   @media screen and (max-width: 600px) {
     .tabs-list {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   .tabs-list__item {
     margin-right: 3.125rem;
     color: #ffffff;
@@ -915,7 +922,39 @@ section {
     @media screen and (max-width: 600px) {
       .tabs-list__item {
         padding-left: 0;
-        white-space: nowrap; } }
+        white-space: nowrap;
+        margin-right: 0; } }
+
+.tabs-list__acco {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.9375rem 0;
+  border-top: 3px solid #18FFFF; }
+  .tabs-list__acco:last-child {
+    border-bottom: 3px solid #18FFFF; }
+  .tabs-list__acco.active {
+    background-color: #00ADC7; }
+  .tabs-list__acco.active .tabs-list__text {
+    padding: 0.9375rem 0.9375rem 0 0.9375rem;
+    height: 100%;
+    visibility: visible;
+    opacity: 1; }
 
 .tabs-content__item {
   color: #ffffff;
@@ -926,6 +965,14 @@ section {
       text-align: center;
       padding: 0 5%;
       padding-top: 4.375rem; } }
+
+.tabs-list__text {
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center;
+  height: 0;
+  visibility: hidden;
+  opacity: 0; }
 
 .screens {
   background-color: #ffffff;

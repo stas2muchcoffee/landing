@@ -20,13 +20,14 @@
         justify-content: center;
         font-size: rem(48px);
         color: $bgblue;
+        text-align: center;
         
         @include laptop {
             font-size: rem(36px);
         }
 
         @include tablets {
-            font-size: rem(30px);
+            font-size: rem(26px);
         }
     }
     &-container {
@@ -86,8 +87,7 @@
     left: 0;
     background-color: $bgblue;
     padding: rem(50px) 0;
-    padding-left: 10%;  
-
+    padding-left: 10%;
 
     &__title {
         margin-bottom: rem(31px);
@@ -121,7 +121,9 @@
     display: flex;
 
     @include tablets {
-        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__item {
@@ -143,7 +145,36 @@
         @include tablets {
             padding-left: 0;
             white-space: nowrap;
+            margin-right: 0;
         }
+    }
+}
+
+.tabs-list__acco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: rem(18px);    
+    text-align: center;
+    cursor: pointer;    
+    padding: rem(15px) 0;
+    border-top: 3px solid #18FFFF;
+
+    &:last-child {
+        border-bottom: 3px solid #18FFFF;
+    }
+
+    &.active {
+        background-color: #00ADC7;
+    }
+    &.active .tabs-list__text {
+        padding: rem(15px) rem(15px) 0 rem(15px) ;    
+        height: 100%;
+        visibility: visible;
+        // transition: all .7s;
+        opacity: 1;
     }
 }
 
@@ -160,4 +191,14 @@
             padding-top: rem(70px);        
         }
     }
+}
+
+.tabs-list__text {
+    color: #ffffff;
+    font-size: rem(18px);
+    text-align: center;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    // transition: height .7s;
 }
