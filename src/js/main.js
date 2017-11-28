@@ -53,31 +53,53 @@ if (matchMedia) {
 
 // slider
 
-// $('.slider').slick({
-// 	centerMode: true,
-// 	centerPadding: '30px',
-// 	slidesToShow: 3,
-// 	arrows: true,
-// 	accessibility: true,
-// 	focusOnSelect: true,
-// 	// responsive: [
-// 	//   {
-// 	// 	breakpoint: 599,
-// 	// 	settings: {
-// 	// 	  arrows: true,
-// 	// 	  centerMode: true,
-// 	// 	  centerPadding: '40px',
-// 	// 	  slidesToShow: 1
-// 	// 	}
-// 	//   },
-// 	//   {
-// 	// 	breakpoint: 480,
-// 	// 	settings: {
-// 	// 	  arrows: true,
-// 	// 	  centerMode: true,
-// 	// 	  centerPadding: '40px',
-// 	// 	  slidesToShow: 1
-// 	// 	}
-// 	//   }
-// 	// ]
-//   });
+  $(function($){
+    $('.owl-carousel').owlCarousel({
+		loop:true,
+		center: true,
+		margin:200,
+		autoWidth: true,
+		stagePadding: 300,
+		startPosition: 2,	
+		dots:false,
+		smartSpeed: 500,
+        responsive:{
+            0:{
+				items:1,
+				margin:150,
+				stagePadding: 90,
+			},
+			
+			321:{
+				items:1,
+				margin:200,
+				stagePadding: 130,
+			},
+			
+            601:{
+				margin:130,
+				stagePadding: 90,
+            },
+            900:{
+				margin:150,
+				stagePadding: 200,	
+			},
+			1200:{
+				margin:200,
+				stagePadding: 300,
+            }
+        }
+    })
+
+//переназначаем кнопки по умолчанию
+
+var owl = $(".owl-carousel");
+owl.owlCarousel();
+$(".slider-controls__next").click(function(){
+    owl.trigger("next.owl.carousel");
+});
+$(".slider-controls__prev").click(function(){
+    owl.trigger("prev.owl.carousel");
+});
+
+});
