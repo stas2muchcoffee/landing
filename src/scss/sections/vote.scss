@@ -95,6 +95,10 @@
         @include tablets {
             margin-bottom: rem(50px);
         }
+
+        @include vertical {
+            margin-bottom: rem(25px);
+        }
     }
 
     @include desktop {
@@ -162,8 +166,16 @@
     padding: rem(15px) 0;
     border-top: 3px solid #18FFFF;
 
+    @include vertical {
+        border-top: 1px solid #18FFFF;    
+    }
+
     &:last-child {
         border-bottom: 3px solid #18FFFF;
+
+        @include vertical {
+            border-bottom: 1px solid #18FFFF;    
+        }
     }
 
     &.active {

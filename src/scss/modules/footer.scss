@@ -28,11 +28,24 @@
             padding: rem(65px) 0 rem(40px) 0;
             width: rem(330px);
         }
+        @include vertical {
+            padding: rem(40px) 0 rem(70px) 0;
+        }
     }
 }
 
 .footer-title {
     margin-bottom: rem(43px);
+    font-size: rem(36px);
+    color: #fff;
+
+    @include phones {
+        font-size: rem(24px);
+    }
+
+    @include vertical {
+        font-size: rem(24px);
+    }
 }
 
 .form {

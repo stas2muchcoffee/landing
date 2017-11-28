@@ -32,6 +32,10 @@
         justify-content: center;
         transform: translateX(10px);
     }
+
+    @include vertical {
+        margin-bottom: rem(16px);
+    }
 }
 
 .about-list__container {
@@ -83,6 +87,12 @@
     color: #fff;
     font-size: rem(48px);
     margin-bottom: rem(28px);
+
+    @include vertical {
+        font-size: rem(24px);
+        width: rem(170px);
+        text-align: center;
+    }
 }
 
 .about-text {
@@ -104,6 +114,7 @@
 
     @include vertical {
         padding: 0 30%;
+        font-size: rem(14px);    
     }
 }
 

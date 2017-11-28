@@ -63,7 +63,8 @@ section {
   max-width: 100%;
   height: 100%;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+  z-index: 999; }
 
 .container {
   width: 95%;
@@ -220,6 +221,9 @@ section {
   @media screen and (max-width: 480px) {
     .caption_color_wh {
       font-size: 1.5rem; } }
+  @media screen and (max-width: 320px) {
+    .caption_color_wh {
+      font-size: 2.25rem; } }
 
 .caption_color_blue {
   font-size: 3rem;
@@ -321,9 +325,20 @@ section {
       .footer-container {
         padding: 4.0625rem 0 2.5rem 0;
         width: 20.625rem; } }
+    @media screen and (max-width: 320px) {
+      .footer-container {
+        padding: 2.5rem 0 4.375rem 0; } }
 
 .footer-title {
-  margin-bottom: 2.6875rem; }
+  margin-bottom: 2.6875rem;
+  font-size: 2.25rem;
+  color: #fff; }
+  @media screen and (max-width: 480px) {
+    .footer-title {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 320px) {
+    .footer-title {
+      font-size: 1.5rem; } }
 
 .form {
   width: 100%; }
@@ -469,6 +484,9 @@ section {
       -webkit-transform: translateX(10px);
       -ms-transform: translateX(10px);
       transform: translateX(10px); } }
+  @media screen and (max-width: 320px) {
+    .about-list {
+      margin-bottom: 1rem; } }
 
 .about-list__container {
   margin-top: 30px; }
@@ -524,6 +542,11 @@ section {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 1.75rem; }
+  @media screen and (max-width: 320px) {
+    .about-title {
+      font-size: 1.5rem;
+      width: 10.625rem;
+      text-align: center; } }
 
 .about-text {
   font-size: 1.125rem;
@@ -541,7 +564,8 @@ section {
       padding: 0 28%; } }
   @media screen and (max-width: 320px) {
     .about-text {
-      padding: 0 30%; } }
+      padding: 0 30%;
+      font-size: 0.875rem; } }
 
 .about-socials {
   display: -webkit-box;
@@ -864,6 +888,9 @@ section {
     @media screen and (max-width: 600px) {
       .vote-use__title {
         margin-bottom: 3.125rem; } }
+    @media screen and (max-width: 320px) {
+      .vote-use__title {
+        margin-bottom: 1.5625rem; } }
   @media screen and (max-width: 1200px) {
     .vote-use {
       padding-left: 0; } }
@@ -946,8 +973,14 @@ section {
   cursor: pointer;
   padding: 0.9375rem 0;
   border-top: 3px solid #18FFFF; }
+  @media screen and (max-width: 320px) {
+    .tabs-list__acco {
+      border-top: 1px solid #18FFFF; } }
   .tabs-list__acco:last-child {
     border-bottom: 3px solid #18FFFF; }
+    @media screen and (max-width: 320px) {
+      .tabs-list__acco:last-child {
+        border-bottom: 1px solid #18FFFF; } }
   .tabs-list__acco.active {
     background-color: #00ADC7; }
   .tabs-list__acco.active .tabs-list__text {
@@ -987,7 +1020,8 @@ section {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 100; }
   .screens-title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1127,11 +1161,12 @@ section {
     -o-transition: .3s;
     transition: .3s; }
 
-.owl-item.center .item {
+.owl-item.center .item img {
+  width: 100% !important; }
+
+.owl-item.center {
   -webkit-box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25); }
-  .owl-item.center .item img {
-    width: 100% !important; }
 
 .item {
   width: 225px;
@@ -1337,6 +1372,9 @@ section {
   align-items: center;
   position: relative;
   z-index: 0; }
+  @media screen and (max-width: 320px) {
+    .market {
+      padding-bottom: 7.5rem; } }
   .market-container {
     width: 39.6875rem;
     position: relative; }
@@ -1353,6 +1391,10 @@ section {
       -ms-flex-pack: end;
       justify-content: flex-end;
       position: relative; }
+
+@media screen and (max-width: 320px) {
+  .market-phones {
+    margin-top: 1.875rem; } }
 
 .market-phones__item {
   display: -webkit-box;
@@ -1371,8 +1413,12 @@ section {
       height: 35.625rem; } }
   @media screen and (max-width: 480px) {
     .market-phones__item {
-      width: 17.75rem;
-      height: 30.625rem; } }
+      width: 15.75rem;
+      height: 28.625rem; } }
+  @media screen and (max-width: 320px) {
+    .market-phones__item {
+      width: 14rem;
+      height: 25.625rem; } }
 
 .market-phones__img {
   max-width: 100%;
@@ -1402,7 +1448,11 @@ section {
   @media screen and (max-width: 480px) {
     .market-phones__item_absolute {
       top: 150px;
-      left: 13%; } }
+      left: 19%; } }
+  @media screen and (max-width: 320px) {
+    .market-phones__item_absolute {
+      top: 150px;
+      left: 22%; } }
 
 .market-socials {
   position: absolute;
